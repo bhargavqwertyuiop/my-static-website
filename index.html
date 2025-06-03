@@ -3,10 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Attractive Static Site</title>
+  <title>Your Name — Portfolio</title>
+
   <!-- Link to external CSS -->
   <link rel="stylesheet" href="css/style.css" />
-  <!-- Google Font for nicer typography -->
+
+  <!-- Google Font for clean typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap"
@@ -14,55 +16,115 @@
   />
 </head>
 <body>
-  <!-- HEADER / NAVIGATION -->
+  <!-- ======================
+       HEADER / NAVIGATION
+       ====================== -->
   <header class="site-header">
     <nav class="navbar">
-      <div class="logo">MyStaticSite</div>
+      <div class="logo">YourName</div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#features">Features</a></li>
+        <li><a href="#about">About / Resume</a></li>
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
+  <!-- ================
+       HERO SECTION
+       ================ -->
   <section id="home" class="hero">
     <div class="hero-content">
-      <h1>Welcome to My Static Site</h1>
-      <p>Simple. Fast. Beautiful.</p>
-      <a href="#features" class="btn-primary">Learn More</a>
+      <h1>Your Name</h1>
+      <p>Passionate [Your Role/Title, e.g., “Software Engineer”] based in [Your City]</p>
+      <a href="#about" class="btn-primary">Learn More</a>
     </div>
   </section>
 
-  <!-- FEATURES SECTION -->
-  <section id="features" class="features">
-    <h2>Key Features</h2>
-    <div class="feature-cards">
-      <div class="card">
-        <div class="card-icon">🚀</div>
-        <h3>Blazing Fast</h3>
-        <p>Pages load instantly because there’s no back-end processing.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">💻</div>
-        <h3>Easy to Maintain</h3>
-        <p>All you need is HTML/CSS/JS—no database or server code.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎨</div>
-        <h3>Fully Customizable</h3>
-        <p>Customize colors, fonts, and layouts—get exactly the look you want.</p>
+  <!-- ========================
+       ABOUT / RESUME SECTION
+       ======================== -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About / Resume</h2>
+      <!-- Replace the content below with your actual resume details -->
+      <div class="resume-content">
+        <p>
+          <strong>Summary:</strong>  
+          <!-- Example: “Full‐stack developer with 3+ years in web applications, specializing in React, Node.js, and Azure DevOps…” -->
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis auctor, mauris in vulputate sollicitudin, purus nulla tristique urna, sit amet ultricies lorem purus vel tellus.
+        </p>
+        <h3>Education</h3>
+        <ul>
+          <li>
+            <strong>Bachelor of Engineering in Computer Science &amp; Engineering</strong>  
+            <br />
+            BMS Institute of Technology (2024) &mdash; CGPA: 8.4
+          </li>
+        </ul>
+        <h3>Experience</h3>
+        <ul>
+          <li>
+            <strong>DevOps Intern</strong>, [Your Company] (July 2024 – Present)  
+            <br />
+            • Building CI/CD pipelines using Jenkins & Docker.<br />
+            • Working with Azure services: Azure SQL, Container Registry, AKS, etc.<br />
+            • Developing small .NET &amp; Python projects for internal tools.
+          </li>
+          <!-- Add more roles as needed -->
+        </ul>
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>Java / Spring Boot</li>
+          <li>React / JavaScript / HTML &amp; CSS</li>
+          <li>Azure (AZ-204, AZ-104 certified)</li>
+          <li>Docker &amp; Kubernetes</li>
+          <li>MySQL / Azure SQL Database</li>
+          <li>Jenkins / Git / Terraform / Ansible / Splunk</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT / FOOTER SECTION -->
+  <!-- ==============================
+       CERTIFICATIONS (IMAGE GALLERY)
+       ============================== -->
+  <section id="certifications" class="certifications">
+    <div class="container">
+      <h2>Certifications</h2>
+      <p>Below are some of my professional certifications:</p>
+
+      <!-- Certification images: 
+           Place your actual image filenames in the src attributes. -->
+      <div class="cert-gallery">
+        <div class="cert-card">
+          <img src="images/cert1.jpg" alt="Certification 1" />
+          <p>Azure AZ-204: Developing Solutions for Microsoft Azure</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert2.jpg" alt="Certification 2" />
+          <p>Azure AZ-104: Microsoft Azure Administrator Associate</p>
+        </div>
+        <div class="cert-card">
+          <img src="images/cert3.jpg" alt="Certification 3" />
+          <p>Git &amp; GitHub Collaboration (Course Certificate)</p>
+        </div>
+        <!-- Add more cert cards as needed: copy the .cert-card block, change src & caption -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ================
+       CONTACT SECTION
+       ================ -->
   <footer id="contact" class="site-footer">
-    <div class="footer-content">
-      <h2>Get in Touch</h2>
-      <p>Email us at <a href="mailto:hello@example.com">hello@example.com</a></p>
-      <p>© 2025 MyStaticSite. All rights reserved.</p>
+    <div class="footer-content container">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">/in/yourprofile</a></p>
+      <p>GitHub: <a href="https://github.com/YourUsername" target="_blank">github.com/YourUsername</a></p>
+      <p>© 2025 Your Name. All rights reserved.</p>
     </div>
   </footer>
 </body>
